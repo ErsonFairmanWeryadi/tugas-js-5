@@ -1,0 +1,31 @@
+<script>
+    function Login(){
+    var done=0;
+    var username=document.login.username.value;
+    username=username.toLowerCase();
+    var password=document.login.password.value;
+    password=password.toLowerCase();
+    if (username=="erson123" && password=="erson123") { window.location.assign("login.html") }
+    else 
+    if (done==0) { alert("Anda Gagal Login"); }
+    }
+</script>
+
+<html>
+    <body>  
+        <title>Login</title>
+        <center>
+            <form name=login>
+            <table height=200 width=400; border=1; cellspacing=0 cellpadding=3 style="margin: 200px auto;">
+            <tr style="text-align: center;height: 50px;"> <td colspan=2><b>LOGIN</b></td></tr>
+            <tr></tr><td>Username:</td><td><input type=text name=username style="width: 100%;"></td></tr>
+            <tr></tr><td>Password:</td><td><input type=text name=password style="width: 100%;"></td></tr>
+            <tr ></tr><td colspan="2" align=center><input type=button value="Login!" onClick="Login()" Value="Clear"></td></tr>
+            </table>
+        </form>
+        </center>
+
+    </body>
+</html>
+
+
